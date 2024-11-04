@@ -25,7 +25,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Step 1 In this step, I created a resource group to organize all lab resources efficiently. Within this group, I established a virtual network (VNet) to enable secure communication among the resources. I also deployed a virtual machine (VM) in the VNet, which will serve as the main environment for executing lab tasks. This foundational setup ensures proper management and connectivity for the upcoming steps.
-- Step 2
+- Step 2 In Step Two, I created a Windows 10 VM named “Client-1” and ensured it was in the same region and virtual network as DC-1. I set Client-1’s DNS settings to DC-1’s private IP address and restarted the VM. After logging in, I tested connectivity by pinging DC-1, which succeeded. Finally, I ran ipconfig /all in PowerShell to verify that the DNS settings correctly showed DC-1’s private IP.
 - Step 3
 - Step 4
 
