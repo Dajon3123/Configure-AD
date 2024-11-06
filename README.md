@@ -50,7 +50,11 @@ Next, I created a Windows 10 client machine in Azure, joined it to the domain, a
 <img src=https://i.imgur.com/3Rx4yIt.png height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I promoted DC-1 to a domain controller with the domain mydomain.com. After a restart, I logged in as mydomain.com\jane_admin and enabled Remote Desktop on Client-1 for domain users.
+
+Next, I logged into DC-1 as jane_admin, opened PowerShell ISE as an administrator, and ran a script to create several user accounts, which I verified in the _EMPLOYEES OU in ADUC. Finally, I tested logging into Client-1 with one of the new accounts, ensuring the correct password worked.
+
+
 </p>
 <br />
 
