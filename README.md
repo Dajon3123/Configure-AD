@@ -40,7 +40,9 @@ Unlock the account in ADUC, reset the password, and verify the login works with 
 <img src=https://i.imgur.com/9AitEBd.png height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I deployed a Windows Server 2022 Datacenter VM on Azure and configured it as a domain controller by installing Active Directory Domain Services (AD DS). I set the server's IP address to static to ensure consistent network connectivity.
+
+Next, I created a Windows 10 client machine in Azure, joined it to the domain, and connected both machines via Remote Desktop. To verify DNS functionality, I ran ipconfig /all on the client machine, confirming that the DNS server pointed to the IP of the domain controller, ensuring proper name resolution and network communication.
 </p>
 <br />
 
