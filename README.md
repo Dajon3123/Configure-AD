@@ -60,6 +60,10 @@ Next, I logged into DC-1 as jane_admin, opened PowerShell ISE as an administrato
 <img src=https://i.imgur.com/4TOwIDx.png height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Lastly, I simulated a lockout on the Azure VM by configuring Group Policy to allow only 5 login attempts before triggering a lockout. I logged into the Windows 10 VM and opened the Local Group Policy Editor (gpedit.msc). Then, I navigated to Computer Configuration > Windows Settings > Security Settings > Account Lockout Policy and set the Account lockout threshold to 5 invalid attempts, the Account lockout duration to 30 minutes, and the Reset account lockout counter after to 15 minutes. After applying the settings, I ran gpupdate /force in PowerShell to enforce the changes. Finally, I tested the policy by attempting more than 5 incorrect logins, which successfully triggered the account lockout.
+
+
+
+
 </p>
 <br />
